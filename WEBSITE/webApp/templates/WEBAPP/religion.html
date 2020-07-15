@@ -1,0 +1,81 @@
+{% extends 'webApp/base.html' %}
+
+{% block title %}Religion{% endblock%}
+
+    {% block content %}
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Christianity
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Christianity is an Abrahamic monotheistic religion based on the life and teachings of Jesus of Nazareth.
+        Its adherents, known as Christians, believe that Jesus is the Christ, whose coming as the messiah was
+        prophesied in the Hebrew Bible, called the Old Testament in Christianity, and chronicled in the New Testament.
+        [1] It is the world's largest religion with about 2.4 billion followers.[2]
+        Christianity remains culturally diverse in its Western and Eastern branches, as well as in its doctrines
+        concerning justification and the nature of salvation, ecclesiology, ordination, and Christology. Their creeds
+        generally hold in common Jesus as the Son of God—the logos incarnated—who ministered, suffered, and died on a
+        cross, but rose from the dead for the salvation of mankind; as referred to as the gospel, meaning the
+        "good news", in the Bible (scripture). Describing Jesus' life and teachings are the four canonical gospels of
+        Matthew, Mark, Luke and John with the Jewish Old Testament as the gospel's respected background.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Islam
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+Islam (/ˈɪslɑːm/;[note 1] Arabic: اَلْإِسْلَامُ‎, romanized: al-’Islām [alʔɪsˈlaːm] (About this soundlisten)) is an Abrahamic
+        monotheistic religion teaching that there is only one God (Allah), and that Muhammad is a messenger of God.
+        It is the world's second-largest religion with over 1.8 billion followers or 24.1% of the world's population,
+        [4] known as Muslims.[5] Muslims make up a majority of the population in 49 countries.[6] Islam teaches that
+        God is merciful, all-powerful, and unique,[7] and has guided mankind through prophets, revealed scriptures and
+        natural signs.[3][8] The primary scriptures of Islam are the Quran, believed to be the verbatim word of God,
+        and the teachings and normative examples (called the sunnah, composed of accounts called hadith) of Muhammad
+        (c. 570 – 8 June 632 CE).[9]
+
+Muslims believe that Islam is the complete and universal version of a primordial faith that was revealed many times
+        before through prophets including Adam, Abraham, Moses and Jesus.[10][11][12] Muslims consider the Quran in its
+        Arabic to be the unaltered and final revelation of God.[13] Like other Abrahamic religions, Islam also teaches
+        a final judgment with the righteous rewarded in paradise and unrighteous punished in hell.[14][15] Religious
+        concepts and practices include the Five Pillars of Islam, which are obligatory acts of worship, and following
+        Islamic law (sharia), which touches on virtually every aspect of life and society, from banking and welfare
+        to women and the environment.[16][17][18] The cities of Mecca, Medina and Jerusalem are home to the three
+        holiest sites in Islam.[19]
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Spirituality
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Spirituality is a broad concept with room for many perspectives. In general, it includes a sense of
+        connection to something bigger than ourselves, and it typically involves a search for meaning in life.
+        As such, it is a universal human experience—something that touches us all.
+      </div>
+    </div>
+  </div>
+</div>
+
+        {% endblock %}

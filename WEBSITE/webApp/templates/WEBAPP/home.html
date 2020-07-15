@@ -1,0 +1,103 @@
+{% extends 'webApp/base.html' %}
+{% load static %}
+
+
+  {% block title %}Welcome to peter.org {% endblock %}
+
+
+    {% block content %}
+    <title>Welcome</title>
+
+<h1 style="color:White;">This is your website</h1>
+<h5 style="color:White;">Built using Python</h5>
+
+<div class="card-white bg-dark" >
+  <div class="card-header">
+      <p class="text-white bg-dark">Daily Quotes</p>
+  </div>
+  <div class="card-body -dark bg-light">
+    <blockquote class="blockquote mb-0">
+      <p> “I am the Lord, the God of all mankind. Is anything too hard for me?"</p>
+      <footer class="blockquote-footer">Jeremiah 32:27 <cite title="Source Title">New International Version (NIV)</cite></footer>
+    </blockquote>
+        <a href="{% url 'dailyquotes'%}" class="btn btn-primary">More</a>
+  </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="{% static 'images/4.JPG'%}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Author</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <a href="{% url 'about' %}" class="btn btn-dark">About Author</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+   <video class="img-fluid" playsinline autoplay muted loop>
+   <source src="{% static 'images/news.mp4'%}" type="video/mp4">
+   </video>
+      <div class="card-body">
+        <h5 class="card-title">News</h5>
+        <p class="card-text">Get current news going on all around the world.</p>
+        <a href="{% url 'news' %}" class="btn btn-dark">News Blog</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <img src="{% static 'images/10.png'%}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Religion</h5>
+        <p class="card-text">Religion is a social-cultural system of designated behaviors and practices, morals,
+            worldviews, texts, sanctified places, prophecies, ethics, or organizations, that relates humanity to
+            supernatural, transcendental, or spiritual elements.</p>
+        <a href="{% url 'religion' %}" class="btn btn-dark">Religion Blog</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+   <video class="img-fluid" playsinline autoplay muted loop>
+   <source src="{% static 'images/food.mp4'%}" type="video/mp4">
+   </video>
+      <div class="card-body">
+        <h5 class="card-title">Food</h5>
+        <p class="card-text">Multi-Michelin starred chef and star of the small screen, Gordon Ramsay has opened a string of successful restaurants across the globe. .</p>
+        <a href="{% url 'food' %}" class="btn btn-dark">Food Blog</a>
+      </div>
+    </div>
+  </div>
+
+    <div class="col mb-4">
+    <div class="card h-100">
+      <img src="{% static 'images/8.jpg'%}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fashion</h5>
+        <p class="card-text">Fashion is a popular aesthetic expression at a certain time and in a certain context,
+            especially in clothing, footwear, lifestyle, accessories, makeup, hairstyle and body proportions</p>
+        <a href="{% url 'fashion' %}" class="btn btn-dark">Fashion Blog</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col mb-4">
+    <div class="card h-100">
+   <video class="img-fluid" playsinline autoplay muted loop>
+   <source src="{% static 'images/football.mp4'%}" type="video/mp4">
+   </video>
+  <div class="card-body">
+   <h5 class="card-title">Sports Blog</h5>
+   <p class="card-text">Ole Gunnar Solskjaer insists footballers are “easy targets” and have been unfairly criticised during the coronavirus crisis.
+
+Health Secretary Matt Hancock MP hit out at Premier League stars for not taking a pay cut last week.
+
+But speaking to Sky Sports, United boss Solskjaer said: “For me football is an easy target sometimes..</p>
+   <a href="{% url 'sports' %}"class="btn btn-dark">More</a>
+  </div>
+  </div>
+    </div>
+    {% endblock %}
